@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'TomatoFont';
+    src: url('../../../../public/assets/fonts/Squirk-RMvV.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, div, p, button {
+    font-family: 'TomatoFont', fantasy;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+body {
+    background-image: url('/assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+}
